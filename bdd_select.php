@@ -1,12 +1,15 @@
 <?php
+// Vérifiez par phpinfo() le type d'accès à une base de données installé sur le système. 
+// Ce fichier explique comment exploiter une base de données avec POO.
 try 
 {
-  //
+  // Identifiants de connexion regroupés
   $host = 'localhost';
   $dbname = 'test';
   $userDB = 'vincent';
   $password = '';
 
+  // Création d'un objet **pdo (*PHP Data Object) avec les identifiants de connexion
   $bdd = new PDO('mysql:host=' . $host .';dbname=' . $dbname . ';charset=utf8', $userDB, '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
   echo "Connexion à la base de donnée réussie...";
  }
