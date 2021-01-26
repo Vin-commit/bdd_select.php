@@ -9,7 +9,7 @@ try
   $userDB = 'vincent';
   $password = '';
 
-  // Création d'un objet **pdo (*PHP Data Object) avec les identifiants de connexion
+  // Création d'un objet PDO (PHP Data Object) avec les identifiants de connexion
   $bdd = new PDO('mysql:host=' . $host .';dbname=' . $dbname . ';charset=utf8', $userDB, '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
   echo "Connexion à la base de donnée réussie...";
  }
