@@ -4,3 +4,4 @@ Permet de se connecter avec PDO à une base de données afin d'afficher son cont
 Le fichier jeux_video.sql permet de connaître la structure des champs de la base de données que l'on interroge.
 
 La technique de la requête préparée permet de supprimer le risque d'attaque par injection SQL (Modofication de la requête SQL).
+Elle permet de securiser tous type de requête : SELECT, INSERT INTO, UPDATE, DELETE FROM
